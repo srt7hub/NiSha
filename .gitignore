@@ -1,0 +1,15 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+
+# Исходники ассетов: сайт использует сжатые версии в public/
+public/franko-cufonfonts/
+public/Playfair Display/
+public/man.png
+public/men.png
+public/gerl.png
