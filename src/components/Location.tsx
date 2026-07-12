@@ -26,7 +26,7 @@ export function Location({ photo, venues }: LocationProps) {
         <TornEdge position="top" variant={2} className="absolute top-0 left-0 w-full z-10 h-10 sm:h-14" />
         <img
           src={photo}
-          alt="Location"
+          alt="Нияз и Шаура"
           className="w-full h-full object-cover"
         />
         <TornEdge position="bottom" variant={1} className="absolute bottom-0 left-0 w-full z-10 h-10 sm:h-14" />

@@ -16,7 +16,7 @@ import { Important } from './components/Important';
 import { Botanical } from './components/Botanical';
 import { Footer } from './components/Footer';
 
-const MUSIC_SRC = '/Mot_-_Svadebnaya_55604836.mp3';
+const MUSIC_SRC = '/wedding-music.mp3';
 
 export default function App() {
   const [opened, setOpened] = useState(false);

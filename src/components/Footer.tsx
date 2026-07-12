@@ -24,7 +24,7 @@ export function Footer({ photo, date, text, countdownTitle, targetDate }: Footer
       >
         <img 
           src={photo} 
-          alt="Footer" 
+          alt="Нияз и Шаура"
           className="w-full h-full object-cover object-center"
         />
         <div className="absolute inset-0 bg-black/30" />

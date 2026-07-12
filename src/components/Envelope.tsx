@@ -10,7 +10,13 @@ export function Envelope({ onOpen }: EnvelopeProps) {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      exit={{ opacity: 0, scale: 1.04 }}
+      // Открытие (exit) — медленнее появления: конверт неспешно
+      // растворяется, открывая приглашение.
+      exit={{
+        opacity: 0,
+        scale: 1.08,
+        transition: { duration: 1.6, ease: [0.22, 1, 0.36, 1] },
+      }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="fixed inset-0 z-50 mx-auto w-full max-w-[450px] bg-[#EFE9DE]"
     >
@@ -22,7 +28,7 @@ export function Envelope({ onOpen }: EnvelopeProps) {
       >
         {/* Фотография конверта — на весь экран */}
         <img
-          src="/fon.png"
+          src="/fon.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full select-none object-cover"
