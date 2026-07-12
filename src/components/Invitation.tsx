@@ -1,4 +1,6 @@
 import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import { BodyText } from './BodyText';
 
 interface InvitationProps {
   title: string;
@@ -14,13 +16,9 @@ interface InvitationProps {
 export function Invitation({ title, text, date }: InvitationProps) {
   return (
     <Section className="text-center max-w-lg mx-auto py-8">
-      <h2 className="text-[26px] sm:text-3xl font-serif font-medium text-wedding-text uppercase mb-5 whitespace-pre-line leading-snug">
-        {title}
-      </h2>
+      <SectionTitle className="mb-5">{title}</SectionTitle>
 
-      <p className="text-[15px] mb-6 whitespace-pre-line max-w-[380px] mx-auto text-wedding-olive">
-        {text}
-      </p>
+      <BodyText className="mb-6 max-w-[380px] mx-auto">{text}</BodyText>
 
       <div className="flex flex-col items-center justify-center text-wedding-olive w-full max-w-[320px] mx-auto">
         <svg viewBox="0 0 200 60" className="w-[240px] h-[60px] -mb-9 overflow-visible">

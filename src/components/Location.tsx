@@ -1,5 +1,7 @@
 import { motion } from 'motion/react';
 import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import { BodyText } from './BodyText';
 import { TornEdge } from './TornEdge';
 import { Botanical } from './Botanical';
 
@@ -40,22 +42,20 @@ export function Location({ photo, venues }: LocationProps) {
             transition={{ duration: 0.7, delay: index * 0.12, ease: [0.22, 1, 0.36, 1] }}
             className="flex flex-col items-center w-full"
           >
-            <h2 className="text-[22px] sm:text-2xl font-serif font-medium text-wedding-text uppercase tracking-[0.22em] mb-2">
-              {venue.label}
-            </h2>
+            <SectionTitle className="mb-2">{venue.label}</SectionTitle>
 
             <span className="text-[46px] sm:text-[52px] font-serif font-light text-wedding-olive leading-none mb-2">
               {venue.time}
             </span>
 
             {/* Место и адрес — одна связка, разделены минимальным шагом */}
-            <p className="text-[17px] sm:text-lg font-serif text-wedding-olive uppercase tracking-[0.14em] mb-1">
+            <p className="text-[17px] sm:text-lg font-serif text-wedding-olive uppercase tracking-[0.14em] whitespace-pre-line leading-[1.35] mb-1">
               {venue.placeName}
             </p>
 
-            <p className="text-[13px] font-normal text-wedding-olive whitespace-pre-line leading-[1.45] mb-4">
+            <BodyText size="small" className="mb-4">
               {venue.address}
-            </p>
+            </BodyText>
 
             {venue.mapLink && (
               <a

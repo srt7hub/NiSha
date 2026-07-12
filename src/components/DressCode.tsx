@@ -1,4 +1,6 @@
 import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import { BodyText } from './BodyText';
 import { motion } from 'motion/react';
 
 interface DressCodeProps {
@@ -59,13 +61,9 @@ export function DressCode({
 }: DressCodeProps) {
   return (
     <Section className="w-full py-9">
-      <h2 className="text-3xl sm:text-4xl font-serif font-medium text-wedding-text uppercase tracking-[0.12em] text-center mb-4">
-        {title}
-      </h2>
+      <SectionTitle className="text-center mb-4">{title}</SectionTitle>
 
-      <p className="text-[13px] text-wedding-olive text-center whitespace-pre-line leading-[1.5] mb-2">
-        {text}
-      </p>
+      <BodyText className="text-center mb-2">{text}</BodyText>
 
       <RowDivider />
 
@@ -86,9 +84,9 @@ export function DressCode({
 
           <Swatches colors={womenColors} size={26} />
 
-          <p className="text-[12px] text-wedding-olive whitespace-pre-line leading-[1.6] mt-4">
+          <BodyText size="small" className="mt-4">
             {womenText}
-          </p>
+          </BodyText>
         </div>
       </motion.div>
 
@@ -103,9 +101,9 @@ export function DressCode({
 
           <Swatches colors={menColors} size={26} />
 
-          <p className="text-[12px] text-wedding-olive whitespace-pre-line leading-[1.6] mt-4">
+          <BodyText size="small" className="mt-4">
             {menText}
-          </p>
+          </BodyText>
         </div>
 
         <div className="w-[52%] shrink-0">

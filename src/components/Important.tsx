@@ -1,4 +1,6 @@
 import { Section } from './Section';
+import { SectionTitle } from './SectionTitle';
+import { BodyText } from './BodyText';
 
 interface ImportantProps {
   title: string;
@@ -8,13 +10,9 @@ interface ImportantProps {
 export function Important({ title, text }: ImportantProps) {
   return (
     <Section className="text-center w-full max-w-lg mx-auto py-9">
-      <h2 className="text-3xl font-serif text-wedding-olive uppercase mb-6">
-        {title}
-      </h2>
+      <SectionTitle className="mb-6">{title}</SectionTitle>
 
-      <p className="text-sm max-w-[340px] mx-auto whitespace-pre-line opacity-80">
-        {text}
-      </p>
+      <BodyText className="max-w-[340px] mx-auto">{text}</BodyText>
     </Section>
   );
 }
