@@ -99,14 +99,14 @@ export function DressCode({
             {menTitle}
           </h3>
 
-          <Swatches colors={menColors} size={26} />
+          <Swatches colors={menColors} size={20} />
 
           <BodyText size="small" className="mt-4">
             {menText}
           </BodyText>
         </div>
 
-        <div className="w-[52%] shrink-0">
+        <div className="w-[56%] shrink-0">
           <img
             src={menPhoto}
             alt="Дресс-код для мужчин"

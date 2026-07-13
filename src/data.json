@@ -30,6 +30,13 @@
         "placeName": "Банкетный зал\n«Самрау»",
         "address": "д. Хасаново, Баймакский район,\nРеспублика Башкортостан",
         "mapLink": "https://2gis.ru/search/Банкетный%20зал%20Самрау%2C%20Хасаново"
+      },
+      {
+        "time": "16:00",
+        "label": "Начало банкета",
+        "placeName": "",
+        "address": "",
+        "mapLink": ""
       }
     ]
   },
@@ -37,13 +44,13 @@
     "title": "ДРЕСС-КОД",
     "text": "Будем рады, если вы поддержите\nпалитру нашего праздника.",
     "womenPhoto": "/dc-women.png",
-    "menPhoto": "/dc-men.png",
+    "menPhoto": "/dc-men.webp",
     "womenTitle": "ДАМЫ",
     "womenText": "Летние образы,\nпредставленные\nв цветовой гамме.",
     "womenColors": ["#4A3226", "#8A7B6C", "#3F4A32", "#8A9A6B", "#EFE3CB"],
     "menTitle": "МУЖЧИНЫ",
     "menText": "Костюм, рубашка, поло\nв представленной\nцветовой гамме.",
-    "menColors": ["#FFFFFF", "#1C1C1C"]
+    "menColors": ["#FFFFFF", "#1C1C1C", "#4A3226", "#B49A80", "#E3D3C0"]
   },
   "important": {
     "title": "ВАЖНО",

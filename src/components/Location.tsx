@@ -49,13 +49,19 @@ export function Location({ photo, venues }: LocationProps) {
             </span>
 
             {/* Место и адрес — одна связка, разделены минимальным шагом */}
-            <p className="text-[17px] sm:text-lg font-serif text-wedding-olive uppercase tracking-[0.14em] whitespace-pre-line leading-[1.35] mb-1">
-              {venue.placeName}
-            </p>
+            {/* У банкета место и адрес пустые — зал тот же, что у сбора гостей,
+                поэтому не повторяем их и не оставляем пустых отступов. */}
+            {venue.placeName && (
+              <p className="text-[17px] sm:text-lg font-serif text-wedding-olive uppercase tracking-[0.14em] whitespace-pre-line leading-[1.35] mb-1">
+                {venue.placeName}
+              </p>
+            )}
 
-            <BodyText size="small" className="mb-4">
-              {venue.address}
-            </BodyText>
+            {venue.address && (
+              <BodyText size="small" className="mb-4">
+                {venue.address}
+              </BodyText>
+            )}
 
             {venue.mapLink && (
               <a
